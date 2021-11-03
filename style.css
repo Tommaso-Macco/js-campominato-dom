@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(102, 102, 212);
+}
+
+#containerbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+*[class^="square"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: coral;
+    border: solid 2px #fff;
+    cursor: pointer;
+  }
+
+.square {
+    width: 10%;
+    height: 10%;
+}
+
+.square-medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.square-difficult {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+.active {
+    background-color: black;
+}
