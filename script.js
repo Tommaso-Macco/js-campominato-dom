@@ -9,6 +9,7 @@
 const contBox = document.getElementById("containerbox")
 const contSquare = document.getElementsByClassName("squarebasic")
 console.log(contBox);
+console.log(contSquare);
 
 // Chiediamo all'utente a quale difficoltà vorrà giocare
 
@@ -17,6 +18,7 @@ console.log(difficulty);
 
 // dopo che l'utente ha deciso la difficoltà facciamo creare al computer la tabella con i quadrati per la difficoltà eseguita
 
+// PARTE FACILE
 if (difficulty == "Facile") {
     for (let i = 0; i < 100; i++) {
         const element = document.createElement('div');
@@ -30,10 +32,6 @@ if (difficulty == "Facile") {
         element.classList.add('square');
         contBox.appendChild(element);
         // Creiamo il numero dentro allo square
-        const contSquare = document.getElementsByClassName("squarebasic")
-        const elemento = document.createElement('div');
-        elemento.classList.add('box');
-        contSquare.appendChild(elemento);
     }
 }else if (difficulty == "Media") {
     for (let i = 0; i < 81; i++) {
@@ -47,7 +45,7 @@ if (difficulty == "Facile") {
         element.classList.add('squarebasic');
         element.classList.add('square-medium');
         contBox.appendChild(element);   
-    }
+    } // PARTE DIFFICILE
 }else {
     for (let i = 0; i < 49; i++) {
         const element = document.createElement('div');
