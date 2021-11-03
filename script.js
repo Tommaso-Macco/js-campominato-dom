@@ -7,6 +7,7 @@
 
 // Collegiamo una variabile all'html
 const contBox = document.getElementById("containerbox")
+const contSquare = document.getElementsByClassName("squarebasic")
 console.log(contBox);
 
 // Chiediamo all'utente a quale difficoltà vorrà giocare
@@ -25,8 +26,14 @@ if (difficulty == "Facile") {
                 element.classList.add("active")
             }
         );
+        element.classList.add('squarebasic');
         element.classList.add('square');
         contBox.appendChild(element);
+        // Creiamo il numero dentro allo square
+        const contSquare = document.getElementsByClassName("squarebasic")
+        const elemento = document.createElement('div');
+        elemento.classList.add('box');
+        contSquare.appendChild(elemento);
     }
 }else if (difficulty == "Media") {
     for (let i = 0; i < 81; i++) {
@@ -37,6 +44,7 @@ if (difficulty == "Facile") {
                 element.classList.add("active")
             }
         );
+        element.classList.add('squarebasic');
         element.classList.add('square-medium');
         contBox.appendChild(element);   
     }
@@ -49,6 +57,7 @@ if (difficulty == "Facile") {
                 element.classList.add("active")
             }
         );
+        element.classList.add('squarebasic');
         element.classList.add('square-difficult');
         contBox.appendChild(element);
     }

@@ -24,7 +24,9 @@ body{
     color: coral;
     border: solid 2px #fff;
     cursor: pointer;
-  }
+}
+
+.squarebasic
 
 .square {
     width: 10%;
